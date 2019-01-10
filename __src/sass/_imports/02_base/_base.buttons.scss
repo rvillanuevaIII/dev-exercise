@@ -1,0 +1,38 @@
+/* ======================================== */
+/* =                                      = */
+/* =              Button Base             = */
+/* =                                      = */
+/* ======================================== */
+
+/*
+.
+.     Base styles for button elements
+.      
+*/
+
+
+// - - - - - - - - - -
+// * Buttons
+// - - - - - - - - - -
+button, .btn {
+      display: inline-block;
+      white-space: nowrap;
+      vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	line-height: normal;
+	cursor: pointer;
+	user-select: none;
+	border: none;
+      position: relative;
+	padding: 0.5em 1em;
+	margin: 0 .125rem;
+	background: #ccc;
+	&:hover{
+		background-color: black;
+		color: white;
+		svg{
+			fill: white;
+		}
+	}
+}

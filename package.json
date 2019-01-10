@@ -1,0 +1,22 @@
+{
+  "name": "entrytest",
+  "version": "1.0.0",
+  "description": "Basic test for entry",
+  "main": "./configs/app.js",
+  "scripts": {
+    "start": "node ./configs/app.js"
+  },
+  "author": "Ruben Villanueva III",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-sass": "^4.9.3",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "node-cmd": "^3.0.0",
+    "opener": "^1.5.1",
+    "sendevent": "^1.0.5",
+    "watch": "^1.0.2"
+  }
+}

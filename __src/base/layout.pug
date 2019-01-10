@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		title Entry Test
+		meta(name="viewport" content="width=device-width")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Rubik")
+		link(rel="stylesheet" href="/css/main.css")
+	body
+		.l-grid
+			nav.l-grid__cell.c-nav
+				ul.c-nav__list
+				each val in pages
+					if (slug=="/"+val.toLowerCase())
+						li.c-nav__list__item.c-nav__list__item--active
+							a(href="/"+val.toLowerCase())= val
+					else
+						li.c-nav__list__item
+							a(href="/"+val.toLowerCase())= val
+			.l-grid__cell
+				block content
+		script(src="js/events.js")

@@ -1,0 +1,38 @@
+extends layout
+block content
+      .u-inner(style="margin-top:1em;")
+            h1 DEV Exercise
+            p Now that you have this site up and running on your localhost, use the screenshots and instructions below to build out the incomplete <a href="/test">test page</a>. Take advantage of all the latest CSS features to minimize the use of any javascript to complete this task. For copy and image assets, feel free to use whatever generator available such as <a href="https://www.lipsum.com/" target="_blank">lipsum</a> and <a href="http://placeimg.com/" target="_blank">Placeimg</a>.
+            p The comp consist of a 2 tab section (provided) with the first displaying copy organized into columns and media cards on the second.
+            p Tab #1: Columns
+            ol
+                  li Create a single column structure, a double column structure, and a triple column structure.
+                  li All column structures should default to a single column when the browser is less than 50em’s. You may utilize the variable $screen-lg which returns 50em.
+                  li All column structures should have identical content: An image, a paragraph, a list, and a link.
+                  li Original image source dimensions are 1000 x 350.
+                  li *Bonus: Utilize BEM syntax: .blockName__elementName–modifierName <a href="http://getbem.com/" target="_blank">About BEM</a>
+            p Tab #2: Media Cards
+            ol
+                  li Create 3 media cards with identical HTML markup.
+                  li Each card must consist of an image area, and a content area.
+                  li The image should take full width of the card with auto height, original image source dimensions are 360 x 200.
+                  li The content area includes a title with an icon, a subtitle, paragraph content, and an action area with 2 buttons (Action btn, Outwards btn).
+                  li Utilize an &lt;h3&gt; tag for the title, and the svg ‘location’ icon provided. See '/images/svg/icons-map.svg'
+                  li For the ‘Action’ button, utilize $color-main for background-color and $color-main-text for the text color.
+                  li For the ‘Outwards’ button, add the provided ‘outwards’ svg icon. See '/images/svg/icons-map.svg'
+                  li Create 2 modifier classes to modify the contents of the last 2 cards.
+                  li The second media card class modifier - ‘reverse’ - should vertically reverse the ‘image’ and ‘content’ areas of the Media Card.
+                  li The third media card class modifier - ‘minimal’ - should hide all elements except both the title with an icon and the subtitle.
+                  li *Bonus: Utilize BEM syntax: .blockName__elementName–modifierName <a href="http://getbem.com/" target="_blank">About BEM</a>
+            p Extra Credit: JS Classes
+            ol
+                  li Use javascript to simulate a class that simply gives a unique id to each media card.
+                  li Store each id in Array or Object so that it can be accessible from the DOM.
+            h2(style="margin-top:1em;") Tab 1: Column Layout Structure - Desktop View
+            img(src="/images/mocks/layout_desktop.jpg" alt="Column Layout Desktop" style="border: 1px solid #CECECE;margin-top:1em;")
+            h2(style="margin-top:1em;") Tab 1: Column Layout Structure - Mobile View
+            img(src="/images/mocks/layout_mobile.jpg" alt="Column Layout Mobile" style="width: 400px;border: 1px solid #CECECE;margin-top:1em;")
+            h2(style="margin-top:1em;") Tab 2: Media Card Components - Desktop View
+            img(src="/images/mocks/cards_desktop.jpg" alt="Media Cards Desktop" style="border: 1px solid #CECECE;margin-top:1em;")
+            h2(style="margin-top:1em;") Tab 2: Media Card Components - Mobile View
+            img(src="/images/mocks/cards_mobile.jpg" alt="Media Cards Mobile" style="width: 400px;margin-top:1em;border: 1px solid #CECECE;")

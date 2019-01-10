@@ -1,0 +1,26 @@
+.c-heading {
+	&__block {
+		max-width: 60rem;
+		padding: 1.5rem 1.5rem 1rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		> *:last-child { flex-grow: 1; }
+		svg { width:0.75em;height:0.75em; }
+		@media screen and (min-width: $screen-md) { padding: 2rem; flex-direction: row; }
+		@media screen and (min-width: $screen-lg) { padding: 3.125rem 1.125rem; }
+		
+		&__header { 
+			@media screen and (min-width: $screen-md) { width: 65%; &:last-child { text-align: center;width: 100%; } }
+			h1, h2, h3, h4, h5, h6 {
+				margin: 0;
+				padding: 0;
+				line-height: 1;
+			}
+			p {
+				margin: 1.8rem 0 0;
+				line-height: 1;
+			}
+		}
+	}
+}

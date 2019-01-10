@@ -1,0 +1,36 @@
+/* ======================================== */
+/* =                                      = */
+/* =            Black Theme Base          = */
+/* =                                      = */
+/* ======================================== */
+
+/*
+.
+.     Base Theme Checklist used as starting point
+.      
+*/
+
+// --- BUTTONS: BEGIN --- //
+$btn-primary-bg: 			#a20520;
+$btn-primary-bg_hover: 		#ffffff;
+$btn-primary-txt_hover: 	#000000;
+// --- BUTTONS: END --- //
+
+.t-black, .theme-black { //REMOVE .theme- use .t-
+      background-color: #000000;
+      color: #dfdddd;
+      h1, h2, h3, h4, h5, h6, strong { color: #ffffff; }
+      p, li { color: #dfdddd; }
+      a { color: #eeaa06; }
+      hr { border-color: #dfdddd; }
+      svg { fill: #ffffff; }
+      .btn {
+            background-color: $btn-primary-bg;
+            color: #ffffff;
+            &:hover {
+                  background-color: $btn-primary-bg_hover;
+                  color: #000000;
+                  svg { fill: #000000; }
+            }
+      }
+}

@@ -1,0 +1,21 @@
+/* ======================================== */
+/* =                                      = */
+/* =          Breakpoint Settings         = */
+/* =                                      = */
+/* ======================================== */
+
+/*
+.
+.     Defines breakpoint variables
+.      
+*/
+
+// - - - - - - - - -
+// * Screen breakpoints
+// prefix: $screen
+// usage: -md || -lg || xlg
+// - - - - - - - - -
+
+$screen-md: 	 32em; // (512px)
+$screen-lg:		 50em; // (800px)
+$screen-xlg: 	113em; // (1808px)

@@ -1,0 +1,112 @@
+.c-tabView {
+	.u-inner { padding-bottom: 0; }
+	&__externals {
+		display: block;
+		padding: 0 1.5rem;
+		line-height: 2.75;
+		@media screen and (min-width: $screen-md) { display: none; }
+	}
+	&__tabs {
+		text-align: center;
+		padding: 0;
+		ul {
+			margin: 0 auto;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			max-height: 3.25em;
+			width: 100%;
+			li {
+				margin: 0;
+				padding: 0.875em 1.5rem;
+				font-weight: normal;
+				background-color: #353535;
+				text-align: left;
+				svg { vertical-align: -0.125em; }
+				&:hover {
+					cursor: pointer;
+					background-color: black;
+					color: white;
+				}
+				&.-active {
+					background-color: #353535;
+					color: black;
+					display: none;
+					svg { fill: black; }
+				}
+				&[data-href] {
+					background-color: #63666A;
+					display: none;
+					@media screen and (min-width: $screen-md) { display: block; }
+				}
+			}
+			.mobileReserve {
+				cursor: pointer;
+				background-color: black;
+				color: white;
+				&:hover{
+					color: white;
+				}
+				svg {
+					fill: white;
+					float: right;
+					transform: rotate(-90deg);
+					width: 1.25em;
+					height: 1.25em;
+				}
+			}
+			&.open {
+				max-height: 100vh;
+				z-index: 999;
+				.mobileReserve svg { transform: rotate(90deg); }
+			}
+		}
+		@media screen and (min-width: $screen-md) {
+			padding: 0;
+			height: auto;
+			ul {
+				padding: 0;
+				justify-content: center;
+				flex-direction: row;
+				position: relative;
+				li {
+					padding: 0.875em 4vw;
+					background-color: transparent;
+					&:hover { background-color: darken(#353535, 5%); }
+					&.-active {
+						background-color: white;
+						display: block;
+					}
+				}
+				.mobileReserve { display: none; }
+			}
+		}
+		@media screen and (min-width: $screen-xlg) {
+			ul li { padding: 0.875em 3.25vw; }
+		}
+	}
+	&__content {
+		background-color: white;
+		padding: 1.5em 0;
+		color: #282828;
+		h1,h2,h3,h4,h5,h6{
+			color: #282828;
+		}
+		h5, p { color: #585858; }
+		.input-cta { color: red; }
+		> * {
+			display: none;
+			&.show { display: block; }
+		}
+		@media screen and (min-width: $screen-md) { padding: 2em 0; }
+		&__block{
+			ul{
+				li{
+					color: #585858;
+				}
+			}
+		}
+	}
+}

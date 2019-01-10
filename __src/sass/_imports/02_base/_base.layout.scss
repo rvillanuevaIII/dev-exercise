@@ -1,0 +1,28 @@
+/* ======================================== */
+/* =                                      = */
+/* =              Layout Base             = */
+/* =                                      = */
+/* ======================================== */
+
+/*
+.
+.     Base Styles for layout elements
+.	html | body | nav | div | section | header | main | article | aside | footer 
+.      
+*/
+
+// - - - - - - - - - -
+// * Section
+// - - - - - - - - - -
+body{
+	font-family: "proxima-nova", sans-serif;
+	line-height: 1.5;
+	color: #585858;
+	font-weight: 300;
+	letter-spacing: normal;
+}
+section{
+	position: relative;
+	width: auto;
+	margin: 0 auto;
+}

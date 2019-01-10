@@ -1,0 +1,27 @@
+.c-nav{
+      display: flex;
+      background-color: #cecece;
+      &__list{
+            margin: 0;
+            list-style-type: none;
+            &__item{
+                  display: inline-block;
+                  a{
+                        display: inherit;
+                        text-align: center;
+                        padding: .5em;
+                        min-width: 4em;
+                        text-decoration: none;
+                        color: black;
+                        &:hover{
+                              background: rgb(235, 235, 235);
+                        }
+                  }
+                  &.c-nav__list__item--active{
+                        a{
+                              background: white;
+                        }
+                  }
+            }
+      }
+}
